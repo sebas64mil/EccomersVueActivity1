@@ -1,0 +1,25 @@
+
+
+.alert-box {
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--alert-bg);
+    color: var(--alert-text);
+    border: 2px solid var(--alert-text);
+    box-shadow: 2px 2px 0px var(--alert-text);
+    padding: var(--space-3xs) var(--space-xs);
+    text-align: center;
+    border-radius: 4px;
+
+}
+
+/* Secondary alert con botón */
+.alert-secondary {
+    background-color: var(--color-primary); /* o algún tono más suave */
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+    box-shadow: 2px 2px 0px var(--color-secondary);
+    display: flex;
+    align-items: center;
+    gap: 2px; /* espacio entre mensaje y botón */
+}

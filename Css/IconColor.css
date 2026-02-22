@@ -1,0 +1,12 @@
+.iconPrimary {
+  color: var(--color-secondary);
+  cursor: pointer;
+  transition: color 0.3s ease;
+  
+}
+.icons-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+}

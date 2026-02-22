@@ -1,0 +1,119 @@
+/* ========================================
+   BUTTON BASE
+======================================== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+/* ========================================
+   COLOR VARIANTS
+======================================== */
+
+/* PRIMARY */
+.btn-primary {
+    background-color: var(--gray-1);
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+    box-shadow: 2px 2px 0px var(--color-secondary);
+}
+
+.btn-primary:hover {
+    box-shadow: none;
+}
+
+.btn-primary:active {
+    transform: scale(0.97);
+}
+
+/* SECONDARY */
+.btn-secondary {
+    background-color: var(--gray-2);
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-accent);
+    border: 2px solid var(--gray-2);
+}
+
+.btn-secondary:active {
+    transform: scale(0.97);
+}
+
+/* TERTIARY */
+
+.btn-tertiary {
+    background-color: transparent;
+    border: none;
+    color: var(--color-secondary);
+}
+
+/* Aseguramos que el icono herede color */
+.btn-tertiary .btn-text > * {
+    color: inherit;
+}
+
+/* HOVER */
+.btn-tertiary:hover {
+    color: var(--color-accent);
+    text-decoration: underline;
+}
+
+/* Ensure the text retains secondary color */
+.btn-tertiary:hover .btn-text {
+    color: var(--color-secondary);
+}
+
+/* Ensure the icon changes color */
+.btn-tertiary:hover .btn-icon {
+    color: var(--color-accent);
+}
+
+/* ACTIVE */
+.btn-tertiary:active {
+    transform: scale(0.97);
+}
+
+
+/* ========================================
+   STRUCTURE VARIANTS
+======================================== */
+
+.btn-icon-only {
+    padding: var(--space-2xs);
+    border-radius: 4px;
+}
+
+.btn-text-only {
+    padding: var(--space-xs) var(--space-m);
+}
+
+/* ========================================
+   INTERNAL ELEMENTS
+======================================== */
+
+.btn-icon,
+.btn-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ========================================
+   OPTIONAL FULL WIDTH
+======================================== */
+
+.btn-block {
+    width: 100%;
+}

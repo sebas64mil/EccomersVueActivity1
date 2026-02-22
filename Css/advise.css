@@ -1,0 +1,63 @@
+/* ========================================
+   ADVISE COMPONENT
+======================================== */
+
+.advise {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+
+    background: var(--color-primary);
+    border-radius: 4px;
+    outline: 2px solid var(--color-secondary);
+    outline-offset: -2px;
+
+    box-shadow: 8px 4px 0px 4px var(--color-secondary);
+    overflow: hidden;
+
+
+
+}
+
+.advise-container {
+    padding: var(--space-xl) var(--space-9xl);
+    background-color: var(--color-primary);
+}
+
+/* LEFT SIDE */
+.advise-content {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 48px 16px;
+}
+
+/* TEXT STYLES */
+.advise-subtitle {
+    color: var(--color-secondary);
+}
+
+.advise-title {
+    color: var(--color-secondary);
+}
+
+.advise-description {
+    color: var(--color-secondary);
+}
+
+/* RIGHT SIDE */
+.advise-image {
+    flex: 1;
+}
+
+.advise-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

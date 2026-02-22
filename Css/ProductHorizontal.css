@@ -1,0 +1,97 @@
+/* CARD HORIZONTAL */
+.product-card-horizontal {
+  display: flex;
+  background: var(--color-primary, #E9E3F5);
+  box-shadow: 4px 4px 0px var(--color-secondary, #231437);
+  border-radius: 6px;
+  outline: 2px solid var(--color-secondary);
+  outline-offset: -2px;
+  overflow: hidden;
+  max-width: 320px;
+  min-width: 300px;
+  height: 120px;
+  flex-shrink: 0;
+}
+
+/* WRAPPER DE LA IMAGEN */
+.product-card-horizontal__image-wrapper {
+  flex: 0 0 33%;   /* ocupa 1/3 del ancho */
+  height: 100%;    /* toma toda la altura de la tarjeta */
+  position: relative;
+  overflow: hidden;
+}
+
+/* IMAGEN */
+.product-card-horizontal__image {
+  width: 100%;
+  height: 100%;     /* cubre todo el wrapper */
+  object-fit: cover; /* se recorta si es necesario */
+  display: block;
+}
+
+/* INFO */
+.product-card-horizontal__info {
+  flex: 1;           /* ocupa el resto del espacio */
+  padding: 8px;      /* margen solo dentro de info */
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  justify-content: center;
+}
+
+/* LIKE BUTTON */
+.product-card-horizontal__like {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.is-liked {
+  color: var(--ColorAccent1);
+}
+
+/* AUTOR */
+.product-card-horizontal__author {
+  color: var(--gray-2);
+}
+
+/* NOMBRE */
+.product-card-horizontal__name {
+  width: 100%;
+  display: block;
+}
+
+.product-card-horizontal__name p {
+  margin: 0;
+  color: var(--color-secondary);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* FOOTER */
+.product-card-horizontal__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* PRECIOS */
+.product-card-horizontal__prices {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.product-card-horizontal__price-final {
+  color: var(--alert-text);
+}
+
+.product-card-horizontal__price-old {
+  font-size: 8px;
+  color: var(--gray-3);
+  text-decoration: line-through;
+}

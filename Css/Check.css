@@ -1,0 +1,12 @@
+.filter-option {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.filter-text {
+  color: var(--color-secondary);
+}

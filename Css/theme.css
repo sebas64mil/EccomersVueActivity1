@@ -1,0 +1,100 @@
+:root {
+
+  /* ========================================
+     🎨 COLORS (LIGHT MODE)
+  ======================================== */
+
+  --color-primary: #E9E3F5;
+  --color-secondary: #231437;
+  --color-accent: #500DE8;
+
+  --gray-1: #E2DAF0;
+  --gray-2: #2B2631;
+  --gray-3: #928B9D;
+
+  --alert-bg: #F0DADA;
+  --alert-text: #A80707;
+
+
+  /* ========================================
+     📏 SPACING SCALE
+  ======================================== */
+
+  --space-3xs: 2px;
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-s: 12px;
+  --space-m: 16px;
+  --space-l: 20px;
+  --space-xl: 24px;
+  --space-2xl: 32px;
+  --space-3xl: 40px;
+  --space-4xl: 48px;
+  --space-5xl: 56px;
+  --space-6xl: 64px;
+  --space-7xl: 72px;
+  --space-8xl: 80px;
+  --space-9xl: 96px;
+
+
+  /* ========================================
+     🔤 FONT FAMILIES
+  ======================================== */
+
+  --font-oswald: "Oswald", sans-serif;
+  --font-lemon: "LEMON MILK", sans-serif;
+
+
+  /* ========================================
+     🔠 FONT SIZES
+  ======================================== */
+
+  --fs-0: 8px;
+  --fs-1: 10px;
+  --fs-2: 12px;
+  --fs-3: 14px;
+  --fs-4: 16px;
+  --fs-5: 18px;
+  --fs-6: 22px;
+  --fs-7: 26px;
+  --fs-8: 32px;
+
+
+  /* ========================================
+     📐 LINE HEIGHTS
+  ======================================== */
+
+  --lh-0: 48px;
+  --lh-1: 39px;
+  --lh-2: 33px;
+  --lh-3: 27px;
+  --lh-4: 24px;
+  --lh-5: 21px;
+  --lh-6: 18px;
+  --lh-7: 15px;
+  --lh-8: 12px;
+
+
+  /* ========================================
+     ⚖ FONT WEIGHTS
+  ======================================== */
+
+  --fw-bold: 700;
+  --fw-regular: 400;
+
+}
+
+.dark {
+  /* ===== DARK MODE ===== */
+  --color-primary: #231437;
+  --color-secondary: #E9E3F5;
+  --color-accent: #8B5CF6;
+
+  --gray-1: #2B2631;
+  --gray-2: #E2DAF0;
+  --gray-3: #9888AB;
+
+  --alert-bg: #371414;
+  --alert-text: #F0DADA;
+
+}
